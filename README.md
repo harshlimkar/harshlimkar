@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Harsh Limkar N</h1>
-<h3 align="center">Aspiring AI Engineer | Hackathon Enthusiast | Voice Tech Innovator</h3>
+<h3 align="center">Student @ Saveetha School of Engineering | B.Tech IT | Full Stack Developer | Software Developer | IoT | AI & ML</h3>
 
 ---
 
