@@ -144,22 +144,6 @@ Along with technical development, I take up leadership roles by organizing hacka
 ![Jupyter](https://img.shields.io/badge/Jupyter-%23F37626.svg?style=flat&logo=Jupyter&logoColor=white)
 ![SPSS](https://img.shields.io/badge/SPSS-%23006699.svg?style=flat)
 
----
-
-## Education
-
-**Saveetha School of Engineering (SIMATS)**  
-Bachelor of Technology – Information Technology  
-2024 – 2028  
-Chennai, Tamil Nadu, India
-
----
-
-## Contact
-
-Email: harshlimkar23@gmail.com  
-LinkedIn: https://www.linkedin.com/in/harsh-limkar  
-GitHub: https://github.com/harshlimkar- Team Lead, **Bharatiya Antariksh Hackathon 2025 (ISRO)** – Air Quality Visualization and Forecasting  
 
 ---
 
@@ -181,7 +165,6 @@ Bachelor of Technology – Information Technology
 Chennai, Tamil Nadu, India
 
 ---
-
 ## Contact
 
 Email: harshlimkar23@gmail.com  
@@ -190,12 +173,6 @@ GitHub: https://github.com/harshlimkar![VS Code](https://img.shields.io/badge/VS
 
 ---
 
-## 📈 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=harshlimkar&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=harshlimkar&layout=compact&theme=radical)
-
----
 
 
 *Thank you for visiting my profile 💖*
