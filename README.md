@@ -169,7 +169,7 @@ Chennai, Tamil Nadu, India
 
 Email: harshlimkar23@gmail.com  
 LinkedIn: https://www.linkedin.com/in/harsh-limkar  
-GitHub: https://github.com/harshlimkar![VS Code](https://img.shields.io/badge/VSCode-%23007ACC.svg?style=flat&logo=visual-studio-code&logoColor=white)
+GitHub: https://github.com/harshlimkar  
 
 ---
 
