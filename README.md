@@ -2,7 +2,7 @@
 
 <h3 align="center">
 B.Tech Information Technology | Software Developer | Full Stack | AI & Machine Learning | IoT  
-President – Hackathon Club, SIMATS Engineering | Secretary – EyeQ Club (AI & CV)
+President – Hackathon Club, SIMATS Engineering | Secretary – EyeQ Club
 </h3>
 
 ---
@@ -169,30 +169,8 @@ GitHub: https://github.com/harshlimkar- Team Lead, **Bharatiya Antariksh Hackath
 - Hackathon Evaluator (2 times) – SIMATS Engineering  
 - Best Tech Head – TechTrove 2.0  
 - Presenter – Tech Star Summit 2025  
-- Certificate of Acknowledgement – Bharatiya Antariksh Hackathon (ISRO)  
-
----
-
-## Technical Skills
-
-### Programming, Web, and Frontend
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=flat&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=flat&logo=next.js&logoColor=white)
-
-### Backend, AI, and Tools
-![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=flat&logo=node.js&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-%23000000.svg?style=flat&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-%23009688.svg?style=flat&logo=fastapi&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-%23000000.svg?style=flat)
-![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-%23000000.svg?style=flat)
-![LangChain](https://img.shields.io/badge/LangChain-%23000000.svg?style=flat)
-
+- Certificate of Acknowledgement – Bharatiya Antariksh Hackathon (ISRO)
+ 
 ---
 
 ## Education
@@ -219,15 +197,5 @@ GitHub: https://github.com/harshlimkar![VS Code](https://img.shields.io/badge/VS
 
 ---
 
-## 🏆 Certifications
-
-- 🥇 **Veetuku Oru Vignani** – Innovation Challenge
-- 💻 **Web Design for Web Developers** – Udemy
-- 🖌️ **UX Design for Web Developers** – Infosys Springboard
-- 📠 **COA – Govt. of Tamil Nadu**
-- 📊 **Tech Star Summit 2025** – Phishing Detection ML Project
-- 🔹 HackFinity 2025 – 24-Hour National Hackathon 
-
----
 
 *Thank you for visiting my profile 💖*
