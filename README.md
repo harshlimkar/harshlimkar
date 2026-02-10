@@ -1,7 +1,7 @@
 <h1 align="center">Harsh Limkar N</h1>
 
 <h3 align="center">
-B.Tech Information Technology | Software Developer | Full Stack | AI & Machine Learning | IoT  
+B.Tech Information Technology | Software Developer | Full Stack | AI & Machine Learning |
 President – Hackathon Club, SIMATS Engineering | Secretary – EyeQ Club
 </h3>
 
