@@ -44,11 +44,6 @@ Along with technical development, I take up leadership roles by organizing hacka
 
 ## Projects
 
-### DevSecure360 – AI-Powered Secure Code Analyzer
-- Detects insecure coding patterns in source code and web applications  
-- Uses AI-driven logic to suggest secure code fixes  
-- Focused on secure development practices and DevSecOps principles  
-
 ### AI Code Plagiarism Checker
 - AI-based system to detect code plagiarism and logic similarity  
 - Compares structural and semantic similarity across programs  
