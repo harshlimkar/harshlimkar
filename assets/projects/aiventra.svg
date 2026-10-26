@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="280">
+  <defs>
+    <style><![CDATA[
+      .proj-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 21px; font-weight: 800; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .proj-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #06B6D4; line-height: 1.5; }
+      .proj-body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 500; fill: #F0F6FC; }
+      .proj-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #D0D7DE; }
+      .proj-badge { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 700; fill: #2EA043; }
+      
+      @keyframes scanVertical {
+        0%, 100% { transform: translateY(0px); opacity: 0.3; }
+        50% { transform: translateY(38px); opacity: 1; }
+      }
+      @keyframes voxelFloatAIV {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes pulseLaser {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+      }
+
+      .laser-scan { animation: scanVertical 2.6s ease-in-out infinite; }
+      .voxel-floating { animation: voxelFloatAIV 4.8s ease-in-out infinite; }
+      .pulse-dot { animation: pulseLaser 2s infinite; }
+    ]]></style>
+  </defs>
+
+  <!-- Minecraft Voxel Card Background -->
+  <rect width="600" height="280" fill="#0D1117" rx="4" stroke="#30363D" stroke-width="1.5" />
+
+  <!-- Blueprint Voxel Grid -->
+  <g opacity="0.2">
+    <line x1="0" y1="70" x2="600" y2="70" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="140" x2="600" y2="140" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="210" x2="600" y2="210" stroke="#484F58" stroke-width="1" />
+    <line x1="330" y1="0" x2="330" y2="280" stroke="#484F58" stroke-width="1" />
+  </g>
+
+  <!-- Eyebrow Badge -->
+  <g transform="translate(24, 24)">
+    <rect x="0" y="0" width="225" height="22" fill="#21262D" stroke="#30363D" stroke-width="1.2" rx="2" />
+    <text x="12" y="15" class="proj-badge">LOCAL MULTIMODAL // 13-PHASE PIPELINE</text>
+  </g>
+
+  <!-- Title & Sub -->
+  <text x="24" y="74" class="proj-title">FORENSIC-ANALYSER</text>
+  <text x="24" y="96" class="proj-sub">Multimodal AI Autopsy &amp; Medico-Legal System (AIVENTRA)</text>
+
+  <!-- Evidence-Grounded Bullet Points -->
+  <g transform="translate(24, 118)">
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="5" r="3" fill="#06B6D4" />
+      <text x="16" y="9" class="proj-body">• YOLOv8 &amp; SAM2 wound detection, trajectory &amp; spatial mapping</text>
+    </g>
+    <g transform="translate(0, 26)">
+      <circle cx="4" cy="5" r="3" fill="#2EA043" />
+      <text x="16" y="9" class="proj-body">• Dual OCR (PaddleOCR + TrOCR) with BioBERT clinical NER</text>
+    </g>
+    <g transform="translate(0, 52)">
+      <circle cx="4" cy="5" r="3" fill="#F0883E" />
+      <text x="16" y="9" class="proj-body">• Hybrid RAG (FAISS + BM25 + RRF) with zero-cloud Ollama LLMs</text>
+    </g>
+  </g>
+
+  <!-- Right Side: 3D Minecraft Voxel Forensic Intelligence Core -->
+  <g>
+    <!-- Voxel Platform Pedestal -->
+    <g transform="translate(470, 205)">
+      <polygon points="0,-24 85,-4 0,16 -85,-4" fill="#161B22" stroke="#30363D" stroke-width="1.2" />
+      <line x1="0" y1="-4" x2="0" y2="-125" stroke="#484F58" stroke-width="1.2" stroke-dasharray="2 2" />
+    </g>
+
+    <!-- Floating 3D Minecraft Voxel Forensic Scanner Cube -->
+    <g class="voxel-floating">
+      <!-- Main Isometric Medical Intelligence Voxel Block -->
+      <g transform="translate(470, 130)">
+        <!-- Top Face (Emerald Medical Sensor) -->
+        <polygon points="0,-32 38,-14 0,4 -38,-14" fill="#2EA043" stroke="#FFFFFF" stroke-width="1.2" />
+        <polygon points="0,-22 22,-12 0,-2 -22,-12" fill="#238636" />
+        <!-- Cross Symbol on Top Face -->
+        <polygon points="0,-16 4,-14 0,-12 -4,-14" fill="#FFFFFF" />
+
+        <!-- Left Face (Autopsy Record Display with Laser Scan) -->
+        <polygon points="-38,-14 0,4 0,42 -38,24" fill="#161B22" stroke="#8B949E" stroke-width="1.2" />
+        
+        <g transform="translate(-28, 4) skewY(26)">
+          <rect x="0" y="0" width="20" height="14" fill="#0D1117" stroke="#30363D" stroke-width="1" />
+          <line x1="2" y1="4" x2="18" y2="4" stroke="#FFFFFF" stroke-width="1" />
+          <line x1="2" y1="8" x2="14" y2="8" stroke="#06B6D4" stroke-width="1" />
+          <line x1="2" y1="12" x2="16" y2="12" stroke="#8B949E" stroke-width="1" />
+
+          <!-- Scanning Emerald/Cyan Laser -->
+          <line x1="-2" y1="0" x2="22" y2="0" stroke="#06B6D4" stroke-width="2" class="laser-scan" />
+        </g>
+
+        <!-- Right Face (Local Ollama Neural Core) -->
+        <polygon points="38,-14 0,4 0,42 38,24" fill="#21262D" stroke="#FFFFFF" stroke-width="1.2" />
+        <g transform="translate(10, 8) skewY(-26)">
+          <rect x="0" y="4" width="18" height="18" fill="#161B22" stroke="#30363D" stroke-width="1" />
+          <circle cx="9" cy="13" r="4" fill="#F0883E" />
+          <circle cx="9" cy="13" r="1.5" fill="#FFFFFF" />
+        </g>
+      </g>
+
+      <!-- Floating Trauma Marker Satellite -->
+      <g transform="translate(515, 84)">
+        <polygon points="0,-12 14,-5 0,2 -14,-5" fill="#F0883E" stroke="#FFFFFF" stroke-width="1" />
+        <polygon points="-14,-5 0,2 0,16 -14,9" fill="#D97706" stroke="#30363D" stroke-width="1" />
+        <polygon points="14,-5 0,2 0,16 14,9" fill="#B45309" stroke="#FFFFFF" stroke-width="1" />
+        <!-- Crosshairs on trauma cube -->
+        <circle cx="0" cy="5" r="2" fill="#FFFFFF" />
+      </g>
+      <text x="515" y="68" class="proj-mono" fill="#F0883E" text-anchor="middle">TRAUMA_ID</text>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Badges -->
+  <g transform="translate(24, 236)">
+    <rect x="0" y="0" width="60" height="22" fill="#21262D" stroke="#30363D" stroke-width="1" rx="2" />
+    <text x="30" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">FastAPI</text>
+
+    <rect x="68" y="0" width="60" height="22" fill="#21262D" stroke="#30363D" stroke-width="1" rx="2" />
+    <text x="98" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Ollama</text>
+
+    <rect x="136" y="0" width="85" height="22" fill="#21262D" stroke="#30363D" stroke-width="1" rx="2" />
+    <text x="178" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">YOLOv8/SAM2</text>
+
+    <rect x="229" y="0" width="75" height="22" fill="#21262D" stroke="#30363D" stroke-width="1" rx="2" />
+    <text x="266" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">FAISS RAG</text>
+
+    <rect x="312" y="0" width="70" height="22" fill="#21262D" stroke="#30363D" stroke-width="1" rx="2" />
+    <text x="347" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">PaddleOCR</text>
+  </g>
+
+  <text x="470" y="252" class="proj-mono" fill="#8B949E" text-anchor="middle">VOXEL SCANNER 3D</text>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="280">
+  <defs>
+    <style>
+      .proj-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 22px; font-weight: 800; fill: #FFFFFF; }
+      .proj-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #FFFFFF; line-height: 1.5; }
+      .proj-body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12.5px; font-weight: 500; fill: #F0F6FC; }
+      .proj-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; fill: #D0D7DE; }
+      .proj-badge { font-family: ui-monospace, monospace; font-size: 10.5px; font-weight: 700; fill: #F0883E; }
+      
+      @keyframes isoRadar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes voxelFloatSPY { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-7px); } }
+      @keyframes pulseAmber { 0%, 100% { r: 3.5; opacity: 0.6; } 50% { r: 6.5; opacity: 1; } }
+      
+      .radar-sweep { transform-origin: 0px 0px; animation: isoRadar 8s linear infinite; }
+      .voxel-floating { animation: voxelFloatSPY 4.6s ease-in-out infinite; }
+      .pulse-amber { animation: pulseAmber 2s infinite; }
+    </style>
+  </defs>
+
+  <rect width="600" height="280" fill="#0D1117" rx="4" stroke="#484F58" stroke-width="1.5" />
+
+  <g opacity="0.25">
+    <line x1="0" y1="70" x2="600" y2="70" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="140" x2="600" y2="140" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="210" x2="600" y2="210" stroke="#484F58" stroke-width="1" />
+    <line x1="330" y1="0" x2="330" y2="280" stroke="#484F58" stroke-width="1" />
+  </g>
+
+  <g transform="translate(24, 26)">
+    <rect x="0" y="0" width="195" height="22" fill="#21262D" stroke="#484F58" stroke-width="1.2" rx="2" />
+    <text x="12" y="15" class="proj-badge">SIH 2026 // PS 26189 // EXIT(0)</text>
+  </g>
+
+  <text x="24" y="76" class="proj-title">SPYDEE</text>
+  <text x="24" y="98" class="proj-sub">Investigative Criminal-Network Analysis System</text>
+
+  <g transform="translate(24, 122)">
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="5" r="3" fill="#F0883E" />
+      <text x="16" y="9" class="proj-body">• Autonomous entity resolution &amp; multi-tier link traversal</text>
+    </g>
+    <g transform="translate(0, 26)">
+      <circle cx="4" cy="5" r="3" fill="#3FB950" />
+      <text x="16" y="9" class="proj-body">• Graph schema mapped to multi-tier crime syndicates</text>
+    </g>
+    <g transform="translate(0, 52)">
+      <circle cx="4" cy="5" r="3" fill="#FFFFFF" />
+      <text x="16" y="9" class="proj-body">• Docker Compose orchestrated microservices runtime</text>
+    </g>
+  </g>
+
+  <g>
+    <g transform="translate(470, 205)">
+      <polygon points="0,-24 85,-4 0,16 -85,-4" fill="#161B22" stroke="#484F58" stroke-width="1.2" />
+      <line x1="0" y1="-4" x2="0" y2="-125" stroke="#6E7681" stroke-width="1.2" stroke-dasharray="2 2" />
+    </g>
+
+    <g class="voxel-floating">
+      <g transform="translate(470, 138)">
+        <polygon points="0,-28 36,-12 0,4 -36,-12" fill="#21262D" stroke="#FFFFFF" stroke-width="1.2" />
+        <polygon points="-36,-12 0,4 0,30 -36,14" fill="#161B22" stroke="#D0D7DE" stroke-width="1.2" />
+        <polygon points="36,-12 0,4 0,30 36,14" fill="#30363D" stroke="#FFFFFF" stroke-width="1.2" />
+      </g>
+
+      <g transform="translate(470, 96)">
+        <polygon points="0,-16 20,-7 0,3 -20,-7" fill="#F0883E" stroke="#FFFFFF" stroke-width="1.2" />
+        <polygon points="-20,-7 0,3 0,18 -20,9" fill="#D97706" stroke="#484F58" stroke-width="1.2" />
+        <polygon points="20,-7 0,3 0,18 20,9" fill="#B45309" stroke="#FFFFFF" stroke-width="1.2" />
+      </g>
+
+      <g transform="translate(470, 96)">
+        <circle cx="0" cy="0" r="50" fill="none" stroke="#484F58" stroke-width="1.2" stroke-dasharray="3 3" />
+        <circle cx="0" cy="0" r="32" fill="none" stroke="#30363D" stroke-width="1" />
+        
+        <g class="radar-sweep">
+          <line x1="0" y1="0" x2="50" y2="0" stroke="#F0883E" stroke-width="1.8" />
+          <circle cx="50" cy="0" r="3.5" fill="#F0883E" />
+        </g>
+
+        <line x1="0" y1="0" x2="-35" y2="-26" stroke="#FFFFFF" stroke-width="1.2" />
+        <line x1="0" y1="0" x2="38" y2="-20" stroke="#3FB950" stroke-width="1.2" />
+        <line x1="0" y1="0" x2="-28" y2="28" stroke="#D0D7DE" stroke-width="1.2" />
+        <line x1="0" y1="0" x2="32" y2="24" stroke="#F0883E" stroke-width="1.2" />
+
+        <rect x="-38" y="-29" width="6" height="6" fill="#FFFFFF" />
+        <rect x="35" y="-23" width="6" height="6" fill="#3FB950" />
+        <rect x="-31" y="25" width="6" height="6" fill="#D0D7DE" />
+        <rect x="29" y="21" width="6" height="6" fill="#F0883E" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(24, 236)">
+    <rect x="0" y="0" width="70" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="35" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">FastAPI</text>
+    <rect x="78" y="0" width="65" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="110" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Neo4j</text>
+    <rect x="151" y="0" width="65" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="183" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Docker</text>
+    <rect x="224" y="0" width="70" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="259" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Python</text>
+  </g>
+
+  <text x="470" y="252" class="proj-mono" fill="#D0D7DE" text-anchor="middle">GRAPH TOPOLOGY 3D</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="280">
+  <defs>
+    <style>
+      .proj-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 22px; font-weight: 800; fill: #FFFFFF; }
+      .proj-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #FFFFFF; line-height: 1.5; }
+      .proj-body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12.5px; font-weight: 500; fill: #F0F6FC; }
+      .proj-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; fill: #D0D7DE; }
+      .proj-badge { font-family: ui-monospace, monospace; font-size: 10.5px; font-weight: 700; fill: #3FB950; }
+      
+      @keyframes bboxPulse {
+        0%, 100% { stroke-dashoffset: 0; opacity: 0.7; }
+        50% { stroke-dashoffset: 20; opacity: 1; }
+      }
+      @keyframes voxelFloatEQ {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes targetSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      
+      .bbox-anim { stroke-dasharray: 6 3; animation: bboxPulse 2s linear infinite; }
+      .voxel-floating { animation: voxelFloatEQ 4.8s ease-in-out infinite; }
+      .target-rotate { transform-origin: 0px 0px; animation: targetSpin 8s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Minecraft Voxel Card Background -->
+  <rect width="600" height="280" fill="#0D1117" rx="4" stroke="#484F58" stroke-width="1.5" />
+
+  <!-- Blueprint Voxel Grid -->
+  <g opacity="0.25">
+    <line x1="0" y1="70" x2="600" y2="70" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="140" x2="600" y2="140" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="210" x2="600" y2="210" stroke="#484F58" stroke-width="1" />
+    <line x1="330" y1="0" x2="330" y2="280" stroke="#484F58" stroke-width="1" />
+  </g>
+
+  <!-- Eyebrow Badge -->
+  <g transform="translate(24, 26)">
+    <rect x="0" y="0" width="190" height="22" fill="#21262D" stroke="#484F58" stroke-width="1.2" rx="2" />
+    <text x="12" y="15" class="proj-badge">COMPUTER VISION // EDGE AI</text>
+  </g>
+
+  <!-- Title & Sub -->
+  <text x="24" y="76" class="proj-title">EyeQ Vision Platform</text>
+  <text x="24" y="98" class="proj-sub">Computer Vision Community &amp; Real-Time Edge Analytics</text>
+
+  <!-- High Contrast Bullet Points -->
+  <g transform="translate(24, 122)">
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="5" r="3" fill="#3FB950" />
+      <text x="16" y="9" class="proj-body">• Edge video streaming pipelines with sub-50ms latency</text>
+    </g>
+    <g transform="translate(0, 26)">
+      <circle cx="4" cy="5" r="3" fill="#F0883E" />
+      <text x="16" y="9" class="proj-body">• Real-time multi-target classification &amp; trajectory tracking</text>
+    </g>
+    <g transform="translate(0, 52)">
+      <circle cx="4" cy="5" r="3" fill="#FFFFFF" />
+      <text x="16" y="9" class="proj-body">• Hardware-accelerated inference deployment for IoT edge nodes</text>
+    </g>
+  </g>
+
+  <!-- Right Side: 3D Isometric Minecraft Voxel Camera & Vision Cube -->
+  <g>
+    <!-- Voxel Platform Pedestal -->
+    <g transform="translate(470, 205)">
+      <polygon points="0,-24 85,-4 0,16 -85,-4" fill="#161B22" stroke="#484F58" stroke-width="1.2" />
+      <line x1="0" y1="-4" x2="0" y2="-115" stroke="#6E7681" stroke-width="1.2" stroke-dasharray="2 2" />
+    </g>
+
+    <!-- Floating 3D Minecraft Vision Block -->
+    <g class="voxel-floating">
+      <!-- Main Isometric Vision Voxel Block -->
+      <g transform="translate(470, 130)">
+        <!-- Top Face (Optics Shield) -->
+        <polygon points="0,-32 38,-14 0,4 -38,-14" fill="#2EA043" stroke="#FFFFFF" stroke-width="1.2" />
+        <polygon points="0,-22 22,-12 0,-2 -22,-12" fill="#3FB950" />
+
+        <!-- Left Face (Lens Housing) -->
+        <polygon points="-38,-14 0,4 0,42 -38,24" fill="#161B22" stroke="#D0D7DE" stroke-width="1.2" />
+        <!-- Voxel Aperture on Left Face -->
+        <g transform="translate(-18, 12) skewY(26)">
+          <rect x="-8" y="-8" width="16" height="16" fill="#0D1117" stroke="#3FB950" stroke-width="1.2" />
+          <circle cx="0" cy="0" r="4" fill="#3FB950" />
+        </g>
+
+        <!-- Right Face (Inference Hardware) -->
+        <polygon points="38,-14 0,4 0,42 38,24" fill="#30363D" stroke="#FFFFFF" stroke-width="1.2" />
+        <g transform="translate(18, 12) skewY(-26)">
+          <rect x="-10" y="-10" width="20" height="20" fill="#21262D" stroke="#484F58" stroke-width="1" />
+          <line x1="-6" y1="0" x2="6" y2="0" stroke="#F0883E" stroke-width="1.2" />
+          <line x1="0" y1="-6" x2="0" y2="6" stroke="#F0883E" stroke-width="1.2" />
+        </g>
+      </g>
+
+      <!-- 3D Voxel Bounding Box Tracking Simulation -->
+      <g transform="translate(470, 85)">
+        <polygon points="0,-16 26,-4 0,8 -26,-4" fill="none" stroke="#F0883E" stroke-width="1.5" class="bbox-anim" />
+        <polygon points="-26,-4 0,8 0,32 -26,20" fill="none" stroke="#F0883E" stroke-width="1.5" class="bbox-anim" />
+        <polygon points="26,-4 0,8 0,32 26,20" fill="none" stroke="#F0883E" stroke-width="1.5" class="bbox-anim" />
+
+        <!-- Target Tracking Crosshair -->
+        <g class="target-rotate">
+          <circle cx="0" cy="8" r="6" fill="none" stroke="#3FB950" stroke-width="1" />
+          <line x1="-9" y1="8" x2="9" y2="8" stroke="#3FB950" stroke-width="1" />
+          <line x1="0" y1="-1" x2="0" y2="17" stroke="#3FB950" stroke-width="1" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Stack Badges -->
+  <g transform="translate(24, 236)">
+    <rect x="0" y="0" width="65" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="32" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">OpenCV</text>
+
+    <rect x="73" y="0" width="65" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="105" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">PyTorch</text>
+
+    <rect x="146" y="0" width="65" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="178" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">FastAPI</text>
+
+    <rect x="219" y="0" width="70" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="254" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Docker</text>
+  </g>
+
+  <text x="470" y="252" class="proj-mono" fill="#D0D7DE" text-anchor="middle">VOXEL VISION SENSOR 3D</text>
+</svg>

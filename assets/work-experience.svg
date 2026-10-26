@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="280">
+  <defs>
+    <style>
+      .proj-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 22px; font-weight: 800; fill: #FFFFFF; }
+      .proj-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #FFFFFF; line-height: 1.5; }
+      .proj-body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 500; fill: #F0F6FC; }
+      .proj-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; fill: #D0D7DE; }
+      .proj-badge { font-family: ui-monospace, monospace; font-size: 10.5px; font-weight: 700; fill: #3FB950; }
+      .proj-desc { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #8B949E; }
+
+      @keyframes beamPulse {
+        0%, 100% { stroke-dashoffset: 40; opacity: 0.4; }
+        50% { stroke-dashoffset: 0; opacity: 1; }
+      }
+      @keyframes voxelFloatEXP {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+
+      .beam-flow { stroke-dasharray: 6 3; animation: beamPulse 2s linear infinite; }
+      .voxel-floating { animation: voxelFloatEXP 4.5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Minecraft Voxel Card Background -->
+  <rect width="600" height="280" fill="#0D1117" rx="4" stroke="#484F58" stroke-width="1.5" />
+
+  <!-- Blueprint Voxel Grid -->
+  <g opacity="0.25">
+    <line x1="0" y1="70" x2="600" y2="70" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="140" x2="600" y2="140" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="210" x2="600" y2="210" stroke="#484F58" stroke-width="1" />
+    <line x1="390" y1="0" x2="390" y2="280" stroke="#484F58" stroke-width="1" />
+  </g>
+
+  <!-- Eyebrow Badge -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="180" height="22" fill="#21262D" stroke="#484F58" stroke-width="1.2" rx="2" />
+    <text x="12" y="15" class="proj-badge">WORK EXPERIENCE</text>
+  </g>
+
+  <!-- Title & Sub -->
+  <text x="24" y="68" class="proj-title">Work Experience</text>
+  <text x="24" y="88" class="proj-sub">AI Development, Operations &amp; Applied Machine Learning</text>
+
+  <!-- Spacious Role Bullets -->
+  <g transform="translate(24, 106)">
+    <!-- Role 1: The BOT Company -->
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="5" r="3" fill="#3FB950" />
+      <text x="16" y="8" class="proj-body"><tspan font-weight="700" fill="#FFFFFF">AI Developer Intern</tspan> — The BOT Company <tspan fill="#3FB950" font-size="10.5px">Oct 2026 – Present</tspan></text>
+      <text x="16" y="24" class="proj-desc">• Contributing to AI &amp; software development across 2 client projects</text>
+    </g>
+
+    <!-- Role 2: Oregent -->
+    <g transform="translate(0, 42)">
+      <circle cx="4" cy="5" r="3" fill="#F0883E" />
+      <text x="16" y="8" class="proj-body"><tspan font-weight="700" fill="#FFFFFF">Business &amp; Tech Ops Lead</tspan> — Oregent <tspan fill="#F0883E" font-size="10.5px">Mar 2026 – Present</tspan></text>
+      <text x="16" y="24" class="proj-desc">• Leading business ops, marketing, strategic planning &amp; tech dev</text>
+    </g>
+
+    <!-- Role 3: Edufyi Tech Solutions -->
+    <g transform="translate(0, 84)">
+      <circle cx="4" cy="5" r="3" fill="#FFFFFF" />
+      <text x="16" y="8" class="proj-body"><tspan font-weight="700" fill="#FFFFFF">AI Intern</tspan> — Edufyi Tech Solutions <tspan fill="#D0D7DE" font-size="10.5px">Jul 2025 – Sep 2025</tspan></text>
+      <text x="16" y="24" class="proj-desc">• ML anomaly-detection applying AI to identify patterns in data</text>
+    </g>
+  </g>
+
+  <!-- Right Side: 3D Minecraft Voxel Server Stack -->
+  <g>
+    <!-- Voxel Platform Pedestal -->
+    <g transform="translate(495, 205)">
+      <polygon points="0,-24 85,-4 0,16 -85,-4" fill="#161B22" stroke="#484F58" stroke-width="1.2" />
+      <line x1="0" y1="-4" x2="0" y2="-125" stroke="#6E7681" stroke-width="1.2" stroke-dasharray="2 2" />
+    </g>
+
+    <!-- Floating 3D Voxel Node -->
+    <g class="voxel-floating">
+      <!-- Base Server Voxel Block -->
+      <g transform="translate(495, 142)">
+        <polygon points="0,-28 36,-12 0,4 -36,-12" fill="#21262D" stroke="#FFFFFF" stroke-width="1.2" />
+        <polygon points="-36,-12 0,4 0,32 -36,16" fill="#161B22" stroke="#D0D7DE" stroke-width="1.2" />
+        <polygon points="36,-12 0,4 0,32 36,16" fill="#30363D" stroke="#FFFFFF" stroke-width="1.2" />
+      </g>
+
+      <!-- Active Client Project Voxel (Emerald) -->
+      <g transform="translate(495, 106)">
+        <polygon points="0,-20 26,-8 0,4 -26,-8" fill="#3FB950" stroke="#FFFFFF" stroke-width="1.2" />
+        <polygon points="0,-12 12,-6 0,0 -12,-6" fill="#2EA043" />
+        <polygon points="-26,-8 0,4 0,22 -26,10" fill="#2EA043" stroke="#D0D7DE" stroke-width="1.2" />
+        <polygon points="26,-8 0,4 0,22 26,10" fill="#1C6C2B" stroke="#FFFFFF" stroke-width="1.2" />
+      </g>
+
+      <!-- Connection Beam -->
+      <g transform="translate(495, 106)">
+        <line x1="0" y1="-20" x2="0" y2="-55" stroke="#3FB950" stroke-width="2" class="beam-flow" />
+        <circle cx="0" cy="-55" r="4" fill="#3FB950" />
+        <text x="10" y="-52" class="proj-mono" fill="#3FB950">PROD ACTIVE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Stack Badges -->
+  <g transform="translate(24, 240)">
+    <rect x="0" y="0" width="85" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="42" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">The BOT Co</text>
+
+    <rect x="93" y="0" width="75" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="130" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Oregent</text>
+
+    <rect x="176" y="0" width="75" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="213" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Edufyi</text>
+
+    <rect x="259" y="0" width="95" height="22" fill="#21262D" stroke="#3FB950" stroke-width="1" rx="2" />
+    <text x="306" y="15" class="proj-mono" fill="#3FB950" text-anchor="middle">2 Client Proj</text>
+  </g>
+
+  <text x="495" y="252" class="proj-mono" fill="#D0D7DE" text-anchor="middle">ENTERPRISE AI PIPELINE</text>
+</svg>

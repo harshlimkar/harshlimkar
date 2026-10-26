@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="280">
+  <defs>
+    <style>
+      .proj-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 22px; font-weight: 800; fill: #FFFFFF; }
+      .proj-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #FFFFFF; line-height: 1.5; }
+      .proj-body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12.5px; font-weight: 500; fill: #F0F6FC; }
+      .proj-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; fill: #D0D7DE; }
+      .proj-badge { font-family: ui-monospace, monospace; font-size: 10.5px; font-weight: 700; fill: #3FB950; }
+      
+      @keyframes vaultSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes voxelFloatCC {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      
+      .vault-rotate { transform-origin: 0px 0px; animation: vaultSpin 20s linear infinite; }
+      .voxel-floating { animation: voxelFloatCC 4.8s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Minecraft Voxel Card Background -->
+  <rect width="600" height="280" fill="#0D1117" rx="4" stroke="#484F58" stroke-width="1.5" />
+
+  <!-- Blueprint Voxel Grid -->
+  <g opacity="0.25">
+    <line x1="0" y1="70" x2="600" y2="70" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="140" x2="600" y2="140" stroke="#484F58" stroke-width="1" />
+    <line x1="0" y1="210" x2="600" y2="210" stroke="#484F58" stroke-width="1" />
+    <line x1="330" y1="0" x2="330" y2="280" stroke="#484F58" stroke-width="1" />
+  </g>
+
+  <!-- Eyebrow Badge -->
+  <g transform="translate(24, 26)">
+    <rect x="0" y="0" width="205" height="22" fill="#21262D" stroke="#484F58" stroke-width="1.2" rx="2" />
+    <text x="12" y="15" class="proj-badge">DEFENSE-IN-DEPTH // CRYPTO</text>
+  </g>
+
+  <!-- Title & Sub -->
+  <text x="24" y="76" class="proj-title">Carecrypt</text>
+  <text x="24" y="98" class="proj-sub">Multi-Layer Cryptography &amp; LSB Pixel Steganography</text>
+
+  <!-- High Contrast Bullet Points -->
+  <g transform="translate(24, 122)">
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="5" r="3" fill="#3FB950" />
+      <text x="16" y="9" class="proj-body">• Military-grade AES-256 CBC payload confidentiality</text>
+    </g>
+    <g transform="translate(0, 26)">
+      <circle cx="4" cy="5" r="3" fill="#F0883E" />
+      <text x="16" y="9" class="proj-body">• Cryptographic SHA-256 hash tamper &amp; integrity detection</text>
+    </g>
+    <g transform="translate(0, 52)">
+      <circle cx="4" cy="5" r="3" fill="#FFFFFF" />
+      <text x="16" y="9" class="proj-body">• Covert LSB carrier embedding in lossless PNG bytes</text>
+    </g>
+  </g>
+
+  <!-- Right Side: 3D Minecraft Obsidian Cipher Vault Block & Key Matrix -->
+  <g>
+    <!-- Voxel Platform Pedestal -->
+    <g transform="translate(470, 205)">
+      <polygon points="0,-24 85,-4 0,16 -85,-4" fill="#161B22" stroke="#484F58" stroke-width="1.2" />
+      <line x1="0" y1="-4" x2="0" y2="-125" stroke="#6E7681" stroke-width="1.2" stroke-dasharray="2 2" />
+    </g>
+
+    <!-- Floating 3D Minecraft Voxel Cipher Vault -->
+    <g class="voxel-floating">
+      <!-- Main Obsidian Vault Voxel Block -->
+      <g transform="translate(470, 130)">
+        <!-- Top Face (Hardened Obsidian Rim) -->
+        <polygon points="0,-32 38,-14 0,4 -38,-14" fill="#21262D" stroke="#FFFFFF" stroke-width="1.2" />
+        <!-- Emerald Cipher Inset on Top -->
+        <polygon points="0,-22 18,-12 0,-2 -18,-12" fill="#3FB950" stroke="#FFFFFF" stroke-width="1" />
+
+        <!-- Left Face (Obsidian Steel Face) -->
+        <polygon points="-38,-14 0,4 0,42 -38,24" fill="#161B22" stroke="#D0D7DE" stroke-width="1.2" />
+        <!-- Keyway Slot on Left Face -->
+        <g transform="translate(-18, 12) skewY(26)">
+          <rect x="-4" y="-8" width="8" height="16" fill="#0D1117" stroke="#3FB950" stroke-width="1.2" />
+          <circle cx="0" cy="-3" r="2" fill="#3FB950" />
+        </g>
+
+        <!-- Right Face (Cipher Mesh Grid) -->
+        <polygon points="38,-14 0,4 0,42 38,24" fill="#30363D" stroke="#FFFFFF" stroke-width="1.2" />
+        <g transform="translate(18, 12) skewY(-26)">
+          <rect x="-8" y="-8" width="16" height="16" fill="#21262D" stroke="#484F58" stroke-width="1" />
+          <circle cx="0" cy="0" r="3" fill="#F0883E" />
+        </g>
+      </g>
+
+      <!-- Rotating Cryptographic Shield Ring -->
+      <g transform="translate(470, 130)">
+        <g class="vault-rotate">
+          <polygon points="0,-52 45,-26 45,26 0,52 -45,26 -45,-26" fill="none" stroke="#484F58" stroke-width="1.2" stroke-dasharray="4 4" />
+          <circle cx="0" cy="-52" r="3" fill="#3FB950" />
+          <circle cx="45" cy="26" r="3" fill="#F0883E" />
+          <circle cx="-45" cy="26" r="3" fill="#FFFFFF" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Stack Badges -->
+  <g transform="translate(24, 236)">
+    <rect x="0" y="0" width="75" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="37" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">AES-256</text>
+
+    <rect x="83" y="0" width="75" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="120" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">SHA-256</text>
+
+    <rect x="166" y="0" width="85" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="208" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Steganography</text>
+
+    <rect x="259" y="0" width="65" height="22" fill="#21262D" stroke="#484F58" stroke-width="1" rx="2" />
+    <text x="291" y="15" class="proj-mono" fill="#FFFFFF" text-anchor="middle">Python</text>
+  </g>
+
+  <text x="470" y="252" class="proj-mono" fill="#D0D7DE" text-anchor="middle">VOXEL CIPHER VAULT 3D</text>
+</svg>

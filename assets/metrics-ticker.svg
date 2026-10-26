@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 84" width="100%" height="84">
+  <defs>
+    <style><![CDATA[
+      .m-num { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 24px; font-weight: 900; }
+      .m-lbl { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #8B949E; letter-spacing: 0.8px; }
+      .m-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 9.5px; font-weight: 500; fill: #6E7681; }
+
+      @keyframes livePulse {
+        0%, 100% { opacity: 0.4; r: 3; }
+        50% { opacity: 1; r: 4.5; }
+      }
+
+      .pulse-blue { animation: livePulse 2s ease-in-out infinite; }
+      .pulse-cyan { animation: livePulse 2s ease-in-out infinite 0.5s; }
+    ]]></style>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+  </defs>
+
+  <!-- CARD 1: 09 Verified Systems -->
+  <g transform="translate(4, 4)">
+    <rect width="220" height="76" rx="6" fill="url(#cardGrad)" stroke="#30363D" stroke-width="1.2" />
+    <line x1="0" y1="0" x2="4" y2="0" stroke="#1F6FEB" stroke-width="3" />
+    <circle cx="204" cy="18" r="3.5" fill="#1F6FEB" class="pulse-blue" />
+    <text x="16" y="32" class="m-num" fill="#1F6FEB">09</text>
+    <text x="16" y="50" class="m-lbl">VERIFIED SYSTEMS</text>
+    <text x="16" y="65" class="m-sub">Agentic AI &amp; Hybrid RAG</text>
+  </g>
+
+  <!-- CARD 2: 500+ Hackers Directed -->
+  <g transform="translate(232, 4)">
+    <rect width="220" height="76" rx="6" fill="url(#cardGrad)" stroke="#30363D" stroke-width="1.2" />
+    <circle cx="204" cy="18" r="3.5" fill="#06B6D4" class="pulse-cyan" />
+    <text x="16" y="32" class="m-num" fill="#06B6D4">500+</text>
+    <text x="16" y="50" class="m-lbl">HACKERS DIRECTED</text>
+    <text x="16" y="65" class="m-sub">National Lead // ORIGIN 2026</text>
+  </g>
+
+  <!-- CARD 3: 120+ Engineers Mentored -->
+  <g transform="translate(460, 4)">
+    <rect width="220" height="76" rx="6" fill="url(#cardGrad)" stroke="#30363D" stroke-width="1.2" />
+    <circle cx="204" cy="18" r="3.5" fill="#1F6FEB" class="pulse-blue" />
+    <text x="16" y="32" class="m-num" fill="#1F6FEB">120+</text>
+    <text x="16" y="50" class="m-lbl">ENGINEERS MENTORED</text>
+    <text x="16" y="65" class="m-sub">President, SIMATS Hackathon Club</text>
+  </g>
+
+  <!-- CARD 4: 2x Awarded Lead -->
+  <g transform="translate(688, 4)">
+    <rect width="224" height="76" rx="6" fill="url(#cardGrad)" stroke="#30363D" stroke-width="1.2" />
+    <circle cx="208" cy="18" r="3.5" fill="#06B6D4" class="pulse-cyan" />
+    <text x="16" y="32" class="m-num" fill="#06B6D4">2×</text>
+    <text x="16" y="50" class="m-lbl">HACKATHON HONORS</text>
+    <text x="16" y="65" class="m-sub">Winner &amp; SIH Finalist</text>
+  </g>
+</svg>

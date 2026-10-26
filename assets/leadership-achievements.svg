@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="280">
+  <defs>
+    <style>
+      .proj-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; font-weight: 800; fill: #FFFFFF; }
+      .proj-body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 500; fill: #F0F6FC; }
+      .proj-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 700; fill: #D0D7DE; }
+      .proj-badge-orange { font-family: ui-monospace, monospace; font-size: 10.5px; font-weight: 700; fill: #F0883E; }
+      .proj-desc { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10.8px; fill: #8B949E; }
+
+      @keyframes numGlow {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 0px transparent); }
+        50% { opacity: 1; filter: drop-shadow(0 0 5px rgba(240, 136, 62, 0.6)); }
+      }
+      @keyframes greenNumGlow {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 0px transparent); }
+        50% { opacity: 1; filter: drop-shadow(0 0 5px rgba(63, 185, 80, 0.6)); }
+      }
+
+      .glow-green { animation: greenNumGlow 3s ease-in-out infinite; }
+      .glow-amber { animation: numGlow 3s ease-in-out infinite 1.5s; }
+    </style>
+  </defs>
+
+  <!-- Base Card -->
+  <rect width="600" height="280" fill="#0D1117" rx="4" stroke="#484F58" stroke-width="1.5" />
+
+  <!-- Background Grid Lines -->
+  <g opacity="0.18">
+    <line x1="0" y1="140" x2="600" y2="140" stroke="#484F58" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="400" y1="0" x2="400" y2="280" stroke="#484F58" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Eyebrow Badge -->
+  <g transform="translate(24, 20)">
+    <rect x="0" y="0" width="220" height="22" fill="#21262D" stroke="#484F58" stroke-width="1.2" rx="2" />
+    <text x="12" y="15" class="proj-badge-orange">LEADERSHIP &amp; COMMUNITY</text>
+  </g>
+
+  <!-- Title -->
+  <text x="24" y="62" class="proj-title">Leadership &amp; Hackathons</text>
+
+  <!-- ── LEFT: MILESTONE TIMELINE ── -->
+  <g transform="translate(24, 76)">
+    <!-- Vertical dashed line connecting milestones -->
+    <line x1="6" y1="14" x2="6" y2="108" stroke="#484F58" stroke-dasharray="3 3" stroke-width="1.5" />
+
+    <!-- Milestone 1: President -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="12" r="5" fill="#21262D" stroke="#3FB950" stroke-width="1.5" />
+      <circle cx="6" cy="12" r="2" fill="#3FB950" />
+      <text x="20" y="10" class="proj-body"><tspan font-weight="700" fill="#FFFFFF">President — SIMATS Hackathon Club</tspan></text>
+      <text x="20" y="24" class="font-mono" font-size="10px" fill="#3FB950">Oct 2025 – Present</text>
+      <text x="20" y="38" class="proj-desc">Leads student hackathons, technical events &amp; innovation initiatives</text>
+    </g>
+
+    <!-- Milestone 2: Secretary & GDG -->
+    <g transform="translate(0, 52)">
+      <circle cx="6" cy="12" r="5" fill="#21262D" stroke="#F0883E" stroke-width="1.5" />
+      <circle cx="6" cy="12" r="2" fill="#F0883E" />
+      <text x="20" y="10" class="proj-body"><tspan font-weight="700" fill="#FFFFFF">Secretary — EyeQ Club</tspan> <tspan font-size="10px" fill="#D0D7DE">Oct 2025 – Oct 2026</tspan></text>
+      <text x="20" y="24" class="font-mono" font-size="10px" fill="#F0883E">• GDG On Campus — SIMATS Member</text>
+      <text x="20" y="38" class="proj-desc">Club coordination focused on AI, computer vision &amp; technical learning</text>
+    </g>
+
+    <!-- Milestone 3: ORIGIN 2026 National Hackathon Banner -->
+    <g transform="translate(0, 114)">
+      <rect x="0" y="0" width="365" height="52" fill="#161B22" stroke="#484F58" stroke-width="1.2" rx="3" />
+      <circle cx="16" cy="18" r="4" fill="#F0883E" />
+      <text x="28" y="18" class="proj-body" font-size="12px" font-weight="700" fill="#FFFFFF">Lead Organizer — ORIGIN 2026 National Hackathon</text>
+      <text x="28" y="36" class="proj-desc">24h national hackathon: planning, operations &amp; participant coordination</text>
+    </g>
+  </g>
+
+  <!-- ── RIGHT: SCOREBOARD METRIC CARDS ── -->
+  <g transform="translate(415, 20)">
+    <!-- Box 1: 10+ Organized -->
+    <g transform="translate(0, 0)">
+      <rect width="160" height="74" fill="#161B22" stroke="#484F58" stroke-width="1.2" rx="4" />
+      <text x="80" y="38" class="proj-title glow-green" font-size="28px" fill="#3FB950" text-anchor="middle">10+</text>
+      <text x="80" y="58" class="proj-mono" font-size="9px" fill="#D0D7DE" text-anchor="middle">HACKATHONS ORGANIZED</text>
+    </g>
+
+    <!-- Box 2: 15+ Evaluated -->
+    <g transform="translate(0, 84)">
+      <rect width="160" height="74" fill="#161B22" stroke="#484F58" stroke-width="1.2" rx="4" />
+      <text x="80" y="38" class="proj-title glow-amber" font-size="28px" fill="#F0883E" text-anchor="middle">15+</text>
+      <text x="80" y="58" class="proj-mono" font-size="9px" fill="#D0D7DE" text-anchor="middle">HACKATHONS EVALUATED</text>
+    </g>
+
+    <!-- Box 3: 20+ Contested (3+ Wins) -->
+    <g transform="translate(0, 168)">
+      <rect width="160" height="74" fill="#161B22" stroke="#484F58" stroke-width="1.2" rx="4" />
+      <text x="80" y="36" class="proj-title" font-size="26px" fill="#FFFFFF" text-anchor="middle">20+</text>
+      <text x="80" y="52" class="proj-mono" font-size="9px" fill="#3FB950" text-anchor="middle">CONTESTED • 3+ WINS</text>
+      <text x="80" y="65" class="proj-desc" font-size="8.5px" fill="#8B949E" text-anchor="middle">NATIONAL COMPETITIONS</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,458 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" width="100%" height="380">
+  <defs>
+    <style>
+      .mc-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; fill: #FFFFFF; }
+      .mc-sub { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #D0D7DE; }
+      .mc-legend { font-family: ui-monospace, monospace; font-size: 11px; font-weight: 600; fill: #3FB950; }
+      .peak-lbl { font-family: ui-monospace, monospace; font-size: 9.5px; font-weight: 700; fill: #39D353; }
+      @keyframes voxelWave {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes beamFlow {
+        0%, 100% { stroke-dashoffset: 40; opacity: 0.4; }
+        50% { stroke-dashoffset: 0; opacity: 1; }
+      }
+      @keyframes beaconPulse {
+        0%, 100% { transform: scale(0.9); opacity: 0.7; }
+        50% { transform: scale(1.2); opacity: 1; }
+      }
+      .wave-t1 { animation: voxelWave 3.8s ease-in-out infinite 0.1s; }
+      .wave-t2 { animation: voxelWave 3.8s ease-in-out infinite 0.4s; }
+      .wave-t3 { animation: voxelWave 3.8s ease-in-out infinite 0.7s; }
+      .wave-t4 { animation: voxelWave 3.8s ease-in-out infinite 1.0s; }
+      .beam-pulse { stroke-dasharray: 6 3; animation: beamFlow 2s linear infinite; }
+      .beacon-dot { animation: beaconPulse 2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1100" height="380" fill="#0D1117" rx="6" stroke="#30363D" stroke-width="1.5" />
+
+  <!-- Technical Header -->
+  <g transform="translate(36, 30)">
+    <rect x="0" y="0" width="12" height="12" fill="#2EA043" rx="2" />
+    <text x="22" y="11" class="mc-title">3D ISOMETRIC CONTRIBUTION LANDSCAPE</text>
+    <text x="22" y="27" class="mc-sub">VOXEL TELEMETRY GRID // HARSH LIMKAR N // SAVEETHA SIMATS</text>
+  </g>
+
+  <!-- Legend Top Right -->
+  <g transform="translate(850, 30)">
+    <text x="0" y="11" class="mc-legend">ACTIVITY LEVEL:</text>
+    <rect x="110" y="2" width="12" height="12" fill="#161B22" stroke="#30363D" stroke-width="1" rx="1" />
+    <rect x="128" y="2" width="12" height="12" fill="#0E4429" rx="1" />
+    <rect x="146" y="2" width="12" height="12" fill="#006D32" rx="1" />
+    <rect x="164" y="2" width="12" height="12" fill="#26A641" rx="1" />
+    <rect x="182" y="2" width="12" height="12" fill="#39D353" rx="1" />
+  </g>
+
+  <!-- 3D Landscape Projection -->
+  <g transform="translate(550, 205)">
+    <!-- 3D Bedrock Platform Base with Chunky Isometric Depth -->
+    <polygon points="-470,0 0,105 470,0 0,-105" fill="#161B22" stroke="#30363D" stroke-width="1.2" />
+    <polygon points="-470,0 0,105 0,123 -470,18" fill="#11161F" stroke="#30363D" stroke-width="1.2" />
+    <polygon points="0,105 470,0 470,18 0,123" fill="#0B0E14" stroke="#30363D" stroke-width="1.2" />
+    <polygon points="-350,0 0,78 350,0 0,-78" fill="none" stroke="#21262D" stroke-width="0.8" stroke-dasharray="3 3" />
+    <polygon points="-230,0 0,51 230,0 0,-51" fill="none" stroke="#21262D" stroke-width="0.8" stroke-dasharray="3 3" />
+
+    <!-- Voxel [-6, -2] lvl=1 -->
+    <g transform="translate(-112, -112)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-6, -1] lvl=0 -->
+    <g transform="translate(-140, -98)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-5, -2] lvl=2 -->
+    <g transform="translate(-84, -98)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-5, -1] lvl=1 -->
+    <g transform="translate(-112, -84)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-6, 0] lvl=2 -->
+    <g transform="translate(-168, -84)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-4, -2] lvl=0 -->
+    <g transform="translate(-56, -84)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-6, 1] lvl=1 -->
+    <g transform="translate(-196, -70)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-5, 0] lvl=3 -->
+    <g transform="translate(-140, -70)" class="wave-t2">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-4, -1] lvl=3 -->
+    <g transform="translate(-84, -70)" class="wave-t3">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-3, -2] lvl=1 -->
+    <g transform="translate(-28, -70)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-4, 0] lvl=4 -->
+    <g transform="translate(-112, -56)" class="wave-t3">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-5, 1] lvl=2 -->
+    <g transform="translate(-168, -56)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-2, -2] lvl=3 -->
+    <g transform="translate(0, -56)" class="wave-t1">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-3, -1] lvl=2 -->
+    <g transform="translate(-56, -56)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-6, 2] lvl=0 -->
+    <g transform="translate(-224, -56)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-4, 1] lvl=3 -->
+    <g transform="translate(-140, -42)" class="wave-t3">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-1, -2] lvl=2 -->
+    <g transform="translate(28, -42)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-2, -1] lvl=4 -->
+    <g transform="translate(-28, -42)" class="wave-t1">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-3, 0] lvl=4 -->
+    <g transform="translate(-84, -42)" class="wave-t4">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-5, 2] lvl=1 -->
+    <g transform="translate(-196, -42)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-3, 1] lvl=4 -->
+    <g transform="translate(-112, -28)" class="wave-t4">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-2, 0] lvl=4 -->
+    <g transform="translate(-56, -28)" class="wave-t1">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [0, -2] lvl=1 -->
+    <g transform="translate(56, -28)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-1, -1] lvl=3 -->
+    <g transform="translate(0, -28)" class="wave-t2">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-4, 2] lvl=2 -->
+    <g transform="translate(-168, -28)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [1, -2] lvl=0 -->
+    <g transform="translate(84, -14)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-3, 2] lvl=1 -->
+    <g transform="translate(-140, -14)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [0, -1] lvl=2 -->
+    <g transform="translate(28, -14)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-2, 1] lvl=3 -->
+    <g transform="translate(-84, -14)" class="wave-t1">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-1, 0] lvl=4 -->
+    <g transform="translate(-28, -14)" class="wave-t2">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-1, 1] lvl=2 -->
+    <g transform="translate(-56, 0)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-2, 2] lvl=2 -->
+    <g transform="translate(-112, 0)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [0, 0] lvl=3 -->
+    <g transform="translate(0, 0)" class="wave-t1">
+      <polygon points="0,-92 14,-85 0,-78 -14,-85" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-85 0,-78 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-78 14,-85 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+      <!-- Peak Contribution Laser Beam -->
+      <line x1="0" y1="-92" x2="0" y2="-142" stroke="#39D353" stroke-width="2" class="beam-pulse" />
+      <circle cx="0" cy="-142" r="4.5" fill="#39D353" class="beacon-dot" />
+      <rect x="-58" y="-168" width="116" height="20" fill="#161B22" stroke="#39D353" stroke-width="1.2" rx="3" />
+      <text x="0" y="-155" class="peak-lbl" text-anchor="middle">PEAK // 54 COMMITS</text>
+    </g>
+    <!-- Voxel [1, -1] lvl=1 -->
+    <g transform="translate(56, 0)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [2, -2] lvl=2 -->
+    <g transform="translate(112, 0)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [2, -1] lvl=3 -->
+    <g transform="translate(84, 14)" class="wave-t1">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [-1, 2] lvl=3 -->
+    <g transform="translate(-84, 14)" class="wave-t2">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [0, 1] lvl=1 -->
+    <g transform="translate(-28, 14)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [1, 0] lvl=2 -->
+    <g transform="translate(28, 14)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [3, -2] lvl=4 -->
+    <g transform="translate(140, 14)" class="wave-t2">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [1, 1] lvl=2 -->
+    <g transform="translate(0, 28)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [4, -2] lvl=3 -->
+    <g transform="translate(168, 28)" class="wave-t3">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [3, -1] lvl=4 -->
+    <g transform="translate(112, 28)" class="wave-t2">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [2, 0] lvl=4 -->
+    <g transform="translate(56, 28)" class="wave-t1">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [0, 2] lvl=2 -->
+    <g transform="translate(-56, 28)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [3, 0] lvl=4 -->
+    <g transform="translate(84, 42)" class="wave-t2">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [5, -2] lvl=1 -->
+    <g transform="translate(196, 42)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [2, 1] lvl=3 -->
+    <g transform="translate(28, 42)" class="wave-t1">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [4, -1] lvl=4 -->
+    <g transform="translate(140, 42)" class="wave-t3">
+      <polygon points="0,-80 14,-73 0,-66 -14,-73" fill="#39D353" stroke="#FFFFFF" stroke-width="0.9" />
+      <polygon points="-14,-73 0,-66 0,14 -14,7" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-66 14,-73 14,7 0,14" fill="#2EB849" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [1, 2] lvl=1 -->
+    <g transform="translate(-28, 42)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [6, -2] lvl=2 -->
+    <g transform="translate(224, 56)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [2, 2] lvl=0 -->
+    <g transform="translate(0, 56)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [4, 0] lvl=3 -->
+    <g transform="translate(112, 56)" class="wave-t3">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [5, -1] lvl=2 -->
+    <g transform="translate(168, 56)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [3, 1] lvl=2 -->
+    <g transform="translate(56, 56)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [5, 0] lvl=3 -->
+    <g transform="translate(140, 70)" class="wave-t4">
+      <polygon points="0,-54 14,-47 0,-40 -14,-47" fill="#26A641" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-47 0,-40 0,14 -14,7" fill="#1A742D" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-40 14,-47 14,7 0,14" fill="#208E37" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [3, 2] lvl=1 -->
+    <g transform="translate(28, 70)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [4, 1] lvl=1 -->
+    <g transform="translate(84, 70)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [6, -1] lvl=0 -->
+    <g transform="translate(196, 70)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [4, 2] lvl=2 -->
+    <g transform="translate(56, 84)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [5, 1] lvl=0 -->
+    <g transform="translate(112, 84)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [6, 0] lvl=1 -->
+    <g transform="translate(168, 84)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [5, 2] lvl=1 -->
+    <g transform="translate(84, 98)">
+      <polygon points="0,-16 14,-9 0,-2 -14,-9" fill="#0E4429" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-9 0,-2 0,14 -14,7" fill="#082918" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-2 14,-9 14,7 0,14" fill="#0B3520" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [6, 1] lvl=2 -->
+    <g transform="translate(140, 98)">
+      <polygon points="0,-34 14,-27 0,-20 -14,-27" fill="#006D32" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,-27 0,-20 0,14 -14,7" fill="#004520" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,-20 14,-27 14,7 0,14" fill="#005728" stroke="#30363D" stroke-width="0.6" />
+    </g>
+    <!-- Voxel [6, 2] lvl=0 -->
+    <g transform="translate(112, 112)">
+      <polygon points="0,-4 14,3 0,10 -14,3" fill="#161B22" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="-14,3 0,10 0,14 -14,7" fill="#0D1117" stroke="#30363D" stroke-width="0.6" />
+      <polygon points="0,10 14,3 14,7 0,14" fill="#12161D" stroke="#30363D" stroke-width="0.6" />
+    </g>
+  </g>
+
+  <!-- Bottom Technical Coordinate Info -->
+  <text x="36" y="356" class="mc-sub">VOXEL COORDINATES: [X: 52 · Y: 7 · Z: 365] // REFRESH: DAILY AT 18:00 UTC VIA GITHUB ACTIONS</text>
+</svg>
+
